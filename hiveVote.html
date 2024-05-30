@@ -1,0 +1,20 @@
+<script type="text/javascript">
+  RED.nodes.registerType('hiveVote', {
+    category: 'Hive',
+    color: '#a6bbcf',
+    defaults: {
+      name: { value: "" }
+    },
+    inputs: 1,
+    outputs: 1,
+    icon: "node.png",
+    label: function () {
+      return this.name || "hiveVote";
+    }
+  });
+</script>
+<div class="form-row">
+  <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+  <input type="text" id="node-input-name" placeholder="Name">
+</div>
+
